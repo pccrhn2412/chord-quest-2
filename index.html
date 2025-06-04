@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chord Quest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Chord Quest</h1>
+    <label for="instrument-select">Instrument:</label>
+    <select id="instrument-select">
+      <option value="piano">Piano</option>
+      <option value="synth">Synth</option>
+    </select>
+    <label for="difficulty-select">Difficulty:</label>
+    <select id="difficulty-select">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+    </select>
+    <button id="start-btn">Start Game</button>
+    <div id="question-area" class="hidden">
+      <p id="prompt-text">Which chord progression did you hear?</p>
+      <div id="choices"></div>
+      <p id="feedback"></p>
+      <p id="score"></p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tone@14.7.77/build/Tone.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
